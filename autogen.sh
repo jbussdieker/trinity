@@ -1,2 +1,9 @@
+LIBTOOLIZE=libtoolize
+which $LIBTOOLIZE &> /dev/null || LIBTOOLIZE=glibtoolize
+which $LIBTOOLIZE &> /dev/null
+if [[ "$?" != "0" ]]; then
+	echo "ERROR: Can't find libtoolize"
+fi
+
 cd libxml2 && ./autogen.sh $@ && cd - &&
-libtoolize && aclocal && autoheader && automake --add-missing && autoconf && ./configure $@
+$LIBTOOLIZE && aclocal && autoheader && automake --add-missing && autoconf && ./configure $@
