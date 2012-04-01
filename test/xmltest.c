@@ -2,8 +2,8 @@
 #include <libxml/xmlversion.h>
 
 int main() {
-	printf("Looking for LIBXML_VERSION: %d...", LIBXML_VERSION);
+	printf("Looking for LIBXML_VERSION: %d...\n", LIBXML_VERSION);
 	xmlCheckVersion(LIBXML_VERSION);
-	printf(" [OK]\n");
+	printf("If you see no errors everything is OK!\n");
 	return 0;
 }
