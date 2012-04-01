@@ -5,7 +5,7 @@ LDFLAGS=/tmp/trinitybuild/lib/libxml2.a -lm -lz -liconv
 all: xmltest
 
 xmltest: xmltest.o
-	$(CC) xmltest.o $(LDFLAGS) -o xmltests
+	$(CC) xmltest.o $(LDFLAGS) -o xmltest
 xmltest.o: xmltest.c
 	$(CC) $(CFLAGS) xmltest.c
 clean:
