@@ -1,6 +1,6 @@
 #include <libxml/xmlversion.h>
 
 int main() {
-	xmlCheckVersion(0);
+	xmlCheckVersion(LIBXML_VERSION);
 	return 0;
 }
