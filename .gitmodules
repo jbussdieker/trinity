@@ -9,7 +9,7 @@
 	url = https://github.com/zedshaw/mongrel2.git
 [submodule "libxml2"]
 	path = libxml2
-	url = git://git.gnome.org/libxml2
+	url = git@github.com:jbussdieker/libxml2
 [submodule "oniguruma"]
 	path = oniguruma
-	url = git://github.com/jbussdieker/oniguruma.git
+	url = git@github.com:jbussdieker/oniguruma
